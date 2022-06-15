@@ -3,7 +3,7 @@ Docker Image for Fast Track Events
 
 ## Getting started:
 
-[Download a zip of this repo](https://github.com/george-barbu-cc/docker-nodejs/archive/master.zip) 
+[Download a zip of this repo](https://github.com/george-barbu-cc/fast-track-events/archive/main.zip) 
 (clone only for contributions). 
 
 Rename the directory with something suitable for your project
