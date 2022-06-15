@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  server:
+    env_file:
+      - .env
+    build:
+      context: '.docker'
+      args:
+          CENTOS_VERSION: ${CENTOS_VERSION}
+          PHP_VERSION: ${PHP_VERSION}
+          COMPOSER_VERSION: ${COMPOSER_VERSION}
+    command: sleep infinity
+    volumes:
+      - ../.:/src/fast-track
+    container_name: ${APP_NAME}_server
+
+
+

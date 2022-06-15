@@ -1,0 +1,17 @@
+[Unit]
+Description=Fast Track CRM Live Events Service
+After=network.target
+StartLimitIntervalSec=0
+ 
+[Service]
+StandardOutput=null
+StandardError=journal
+Type=simple
+User=root
+Group=root
+Restart=always
+RestartSec=5
+ExecStart=/usr/bin/env php /home/cloud-user/bin/fast-track-events/start.php &> /dev/null
+ 
+[Install]
+WantedBy=multi-user.target
